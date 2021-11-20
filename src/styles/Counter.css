@@ -1,0 +1,19 @@
+.counter {
+  font-size: 5em;
+}
+
+.counterContainer button {
+  margin-top: 20px;
+  font-size: 1.4em;
+}
+
+.counterContainer input {
+  font-size: 2em;
+}
+
+.counterContainer .incr-btn {
+  background-color: #2b9328;
+}
+.counterContainer .decr-btn {
+  background-color: #ff3c00;
+}

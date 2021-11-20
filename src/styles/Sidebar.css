@@ -1,0 +1,9 @@
+.sidebar {
+  min-width: 200px;
+  color: white;
+  background-color: #052846;
+}
+
+.sidebar svg {
+  color: white;
+}
