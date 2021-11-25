@@ -85,6 +85,7 @@ function Counter() {
 				className="innerGrid"
 				container
 				xs={4}
+				id="settings-container"
 				item
 				direction="column"
 				justifyContent="space-around"
@@ -95,9 +96,10 @@ function Counter() {
 					item
 					className="innerGrid"
 					justifyContent="space-around"
-					direction="row-reverse"
+					alignContent="center"
+					direction="column"
 				>
-					<Grid item>
+					<Grid item className="settings-input">
 						<TextField
 							id="incrementAmount"
 							label="Increment Amount"
@@ -118,7 +120,7 @@ function Counter() {
 							}}
 						/>
 					</Grid>
-					<Grid item>
+					<Grid item className="settings-input">
 						<TextField
 							id="decrementAmount"
 							label="Decrement Amount"

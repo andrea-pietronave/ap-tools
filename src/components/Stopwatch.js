@@ -1,16 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useRef, useEffect } from "react";
-import {
-	Grid,
-	Button,
-	TextField,
-	Checkbox,
-	FormControlLabel,
-	Box,
-} from "@mui/material";
+import { Button, TextField, Divider, Box } from "@mui/material";
 
 function Stopwatch() {
 	const [timer, setTimer] = useState(0);
+	const [formattedTime, setFormattedTime] = useState({});
 	const [active, setActive] = useState(false);
 	const [splices, setSplices] = useState([]);
 	const [splicesArray, setSplicesArray] = useState([]);
@@ -28,7 +22,18 @@ function Stopwatch() {
 		const hours = `0${Math.floor(minutes / 60)}`.slice(-2);
 		const getHours = `0${hours % 24}`.slice(-2);
 
-		return `${getHours} : ${getMinutes} : ${getSeconds} : ${getHundredSeconds}`;
+		//return `${getHours} : ${getMinutes} : ${getSeconds} : ${getHundredSeconds}`;
+		return (
+			<div>
+				<span>{getHours}</span>
+				<span>:</span>
+				<span>{getMinutes}</span>
+				<span>:</span>
+				<span>{getSeconds}</span>
+				<span>:</span>
+				<span className="hdt-time">{getHundredSeconds}</span>
+			</div>
+		);
 	};
 
 	const startTimer = function () {
@@ -153,7 +158,7 @@ function Stopwatch() {
 					</Box>
 				</Box>
 			</Box>
-
+			<Divider variant="inset" sx={{ width: "100%" }} />
 			<Box
 				container
 				item
@@ -167,6 +172,7 @@ function Stopwatch() {
 				<p>
 					Splices <span>(max. {maxSplices}):</span>
 				</p>
+				<Divider variant="inset" sx={{ width: "100%" }} />
 				<Box id="splices">
 					<ul>{spliceID}</ul>
 					<ul>{splicesArray}</ul>

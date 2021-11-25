@@ -10,6 +10,7 @@ import {
 	DialogContentText,
 	DialogTitle,
 	Checkbox,
+	LinearProgress,
 	FormControlLabel,
 	Box,
 } from "@mui/material";
@@ -28,9 +29,15 @@ function Timer() {
 		setOpen(false);
 	};
 	const handleCloseSuccess = function () {
-		let hours = parseInt(document.getElementById("hours").value);
-		let minutes = parseInt(document.getElementById("minutes").value);
-		let seconds = parseInt(document.getElementById("seconds").value);
+		let hours = !isNaN(parseInt(document.getElementById("hours").value))
+			? parseInt(document.getElementById("hours").value)
+			: 0;
+		let minutes = !isNaN(parseInt(document.getElementById("minutes").value))
+			? parseInt(document.getElementById("minutes").value)
+			: 0;
+		let seconds = !isNaN(parseInt(document.getElementById("seconds").value))
+			? parseInt(document.getElementById("seconds").value)
+			: 0;
 		console.log(hours, minutes, seconds);
 		setDefaultTimer(hours * 3600 + minutes * 60 + seconds);
 		setOpen(false);
@@ -47,14 +54,32 @@ function Timer() {
 		const hours = `0${Math.floor(minutes / 60)}`.slice(-2);
 		const getHours = `0${hours % 24}`.slice(-2);
 
-		return `${getHours} : ${getMinutes} : ${getSeconds}`;
+		return (
+			<div>
+				<span>{getHours}</span>
+				<span>:</span>
+				<span>{getMinutes}</span>
+				<span>:</span>
+				<span>{getSeconds}</span>
+			</div>
+		);
 	};
 
 	const startTimer = function () {
 		setActive(true);
 		countRef.current = setInterval(() => {
-			setTimer((timer) => timer - 1);
+			console.log(timer);
+			if (timer > 0) {
+				setTimer((timer) => timer - 1);
+			} else {
+				alarm();
+			}
 		}, 1000);
+	};
+
+	const alarm = function () {
+		pauseTimer();
+		console.log("!");
 	};
 
 	const resetTimer = function () {
@@ -67,6 +92,10 @@ function Timer() {
 		setActive(false);
 		console.log(active);
 		clearInterval(countRef.current);
+	};
+
+	const normalise = function (value) {
+		return (value * 100) / defaultTimer;
 	};
 
 	useEffect(() => {
@@ -100,6 +129,11 @@ function Timer() {
 					<p className="timer" onClick={handleOpen}>
 						{formatTime(timer)}
 					</p>
+					<LinearProgress
+						variant="determinate"
+						value={normalise(timer)}
+						sx={{ width: "100%", marginBottom: "20px" }}
+					/>
 
 					<Box container item justifyContent="center" className="timer-buttons">
 						<Button

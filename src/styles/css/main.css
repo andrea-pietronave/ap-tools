@@ -13,8 +13,11 @@
   background-color: #2b9328; }
 #counter-container .decr-btn {
   background-color: #ff3c00; }
+#counter-container .settings-input {
+  width: 50%; }
 #counter-container input {
-  font-size: 2em; }
+  font-size: 2em;
+  text-align: center; }
 #counter-container #incrementAmount-helper-text {
   margin-bottom: 10px; }
 #counter-container button {
@@ -26,6 +29,8 @@
 #stopwatch-container {
   width: 90%;
   margin: 0 auto; }
+#stopwatch-container .hdt-time {
+  font-size: 0.6em; }
 #stopwatch-container .inner-container {
   margin-top: 5%; }
 #stopwatch-container .inner-container .timer-buttons button {
