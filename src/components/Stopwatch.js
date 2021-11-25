@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
 	Grid,
 	Button,
@@ -10,16 +10,18 @@ import {
 } from "@mui/material";
 
 function Stopwatch() {
-	let [timer, setTimer] = useState(0);
-	let [active, setActive] = useState(false);
-	let [splices, setSplices] = useState([]);
-	let [splicesArray, setSplicesArray] = useState([]);
-	let [maxSplices, setMaxSplices] = useState(5);
+	const [timer, setTimer] = useState(0);
+	const [active, setActive] = useState(false);
+	const [splices, setSplices] = useState([]);
+	const [splicesArray, setSplicesArray] = useState([]);
+	const [maxSplices, setMaxSplices] = useState(5);
+	const [spliceID, setSpliceId] = useState([]);
+
 	const countRef = useRef(null);
 
-	const formatTime = () => {
-		const getHundredSeconds = `0${timer}`.slice(-2);
-		const seconds = `${Math.floor(timer / 100)}`;
+	const formatTime = (deltaTimer) => {
+		const getHundredSeconds = `0${deltaTimer}`.slice(-2);
+		const seconds = `${Math.floor(deltaTimer / 100)}`;
 		const getSeconds = `0${seconds % 60}`.slice(-2);
 		const minutes = `${Math.floor(seconds / 60)}`;
 		const getMinutes = `0${minutes}`.slice(-2);
@@ -40,8 +42,8 @@ function Stopwatch() {
 		setActive(false);
 		clearInterval(countRef.current);
 		setTimer(0);
-		setSplices([]);
-		setSplicesArray([]);
+
+		initialize();
 	};
 
 	const pauseTimer = function () {
@@ -52,17 +54,28 @@ function Stopwatch() {
 
 	const spliceTimer = function () {
 		splices.unshift(formatTime(timer));
-		if (splices.length > maxSplices) {
-			splicesArray.pop();
-			splicesArray.unshift(
-				<p key={splicesArray.length}>{formatTime(timer)}</p>
-			);
-		} else {
-			splicesArray.unshift(
-				<p key={splicesArray.length}>{formatTime(timer)}</p>
-			);
-		}
+		splicesArray.pop();
+		splicesArray.unshift(
+			<li key={"splice" + splices.length}>{formatTime(timer)}</li>
+		);
 	};
+
+	const initialize = function () {
+		let idTemp = [];
+		let spliceTemp = [];
+		for (let index = 0; index < maxSplices; index++) {
+			idTemp[index] = <li key={"id" + index}>{index + 1}.</li>;
+		}
+		setSpliceId(idTemp);
+		for (let index = 0; index < maxSplices; index++) {
+			spliceTemp[index] = <li key={"tsplice" + index}>{formatTime(0)}</li>;
+		}
+		setSplicesArray(spliceTemp);
+	};
+
+	useEffect(() => {
+		initialize();
+	}, [maxSplices]);
 
 	return (
 		<Box
@@ -88,48 +101,56 @@ function Stopwatch() {
 					alignItems="center"
 					flexDirection="column"
 				>
+					<Box
+						container
+						display="flex"
+						justifyContent="center"
+						alignItems="center"
+						flexDirection="column"
+						className="input-container"
+					>
+						<TextField
+							id="maxSplices"
+							label="Max Splices"
+							variant="standard"
+							type="number"
+							value={maxSplices}
+							InputProps={{
+								inputProps: {
+									min: 0,
+								},
+							}}
+							onChange={(e) => {
+								setMaxSplices(parseInt(e.target.value));
+							}}
+							InputLabelProps={{
+								shrink: true,
+							}}
+						/>
+					</Box>
 					<p className="timer">{formatTime(timer)}</p>
+
 					<Box container item justifyContent="center" className="timer-buttons">
-						<Button variant="contained" color="error" onClick={resetTimer}>
+						<Button
+							id="resetButton"
+							variant="contained"
+							color="error"
+							onClick={resetTimer}
+						>
 							Reset timer
 						</Button>
-						<Button variant="contained" color="warning" onClick={pauseTimer}>
-							Pause timer
-						</Button>
-						<Button variant="contained" onClick={spliceTimer}>
+						<Button id="spliceButton" variant="contained" onClick={spliceTimer}>
 							Splice timer
 						</Button>
-						<Button variant="contained" color="success" onClick={startTimer}>
-							Start timer
+						<Button
+							id="startButton"
+							variant="contained"
+							color={active ? "warning" : "success"}
+							onClick={active ? pauseTimer : startTimer}
+						>
+							{active ? "Pause Timer" : "Start Timer"}
 						</Button>
 					</Box>
-				</Box>
-				<Box
-					container
-					display="flex"
-					justifyContent="center"
-					alignItems="center"
-					flexDirection="column"
-					className="input-container"
-				>
-					<TextField
-						id="maxSplices"
-						label="Max Splices"
-						variant="standard"
-						type="number"
-						value={maxSplices}
-						InputProps={{
-							inputProps: {
-								min: 0,
-							},
-						}}
-						onChange={(e) => {
-							setMaxSplices(e.target.value);
-						}}
-						InputLabelProps={{
-							shrink: true,
-						}}
-					/>
 				</Box>
 			</Box>
 
@@ -146,7 +167,10 @@ function Stopwatch() {
 				<p>
 					Splices <span>(max. {maxSplices}):</span>
 				</p>
-				<Box>{splicesArray}</Box>
+				<Box id="splices">
+					<ul>{spliceID}</ul>
+					<ul>{splicesArray}</ul>
+				</Box>
 			</Box>
 		</Box>
 	);

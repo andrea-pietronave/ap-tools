@@ -1,4 +1,4 @@
-.counter-container{
+#counter-container{
 
     .incr-btn {
       background-color: #2b9328;
@@ -9,6 +9,9 @@
     input {
       font-size: 2em;
     }
+    #incrementAmount-helper-text{
+      margin-bottom: 10px;
+    }
     button {
       margin-top: 20px;
       font-size: 1.4em;
@@ -16,10 +19,7 @@
 
   
   .counter {
-    
       font-size: 5em;
-
-    
   }
 }
   

@@ -40,7 +40,7 @@ function Counter() {
 			container
 			justifyContent="space-around"
 			alignItems="center"
-			className="counter-container"
+			id="counter-container"
 		>
 			<Grid
 				className="innerGrid"
@@ -103,6 +103,7 @@ function Counter() {
 							label="Increment Amount"
 							variant="standard"
 							type="number"
+							helperText="Can't be less than 0"
 							value={incrementAmount}
 							InputProps={{
 								inputProps: {
@@ -123,6 +124,7 @@ function Counter() {
 							label="Decrement Amount"
 							variant="standard"
 							type="number"
+							helperText="Can't be more than 0"
 							value={decrementAmount}
 							InputProps={{
 								inputProps: {

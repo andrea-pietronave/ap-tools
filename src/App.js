@@ -10,11 +10,12 @@ import Counter from "./components/Counter";
 import Stopwatch from "./components/Stopwatch";
 import Sidebar from "./components/Sidebar";
 import ToolBox from "./components/ToolBox";
+import Timer from "./components/Timer";
 
 function App() {
 	return (
 		<Router>
-			<Box sx={{ display: "flex", "min-height": "100vh" }}>
+			<Box sx={{ display: "flex", minHeight: "100vh" }}>
 				<Sidebar></Sidebar>
 
 				<Switch>
@@ -23,6 +24,9 @@ function App() {
 					</Route>
 					<Route path="/tool/stopwatch">
 						<Stopwatch />
+					</Route>
+					<Route path="/tool/timer">
+						<Timer />
 					</Route>
 					<Route path="/tool/toolbox">
 						<ToolBox />

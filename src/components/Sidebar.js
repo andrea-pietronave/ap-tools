@@ -14,6 +14,7 @@ import HourglassTopIcon from "@mui/icons-material/HourglassTop";
 import TimerIcon from "@mui/icons-material/Timer";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
+import BuildIcon from "@mui/icons-material/Build";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import { Box } from "@mui/system";
 
@@ -56,14 +57,7 @@ function Sidebar() {
 							<ListItemText>Stopwatch</ListItemText>
 						</ListItemButton>
 					</List>
-					<List component="div" disablePadding>
-						<ListItemButton component={Link} to="/tool/counter" sx={{ pl: 4 }}>
-							<ListItemIcon>
-								<AddCircleOutlineIcon />
-							</ListItemIcon>
-							<ListItemText>Counter</ListItemText>
-						</ListItemButton>
-					</List>
+
 					<List component="div" disablePadding>
 						<ListItemButton component={Link} to="/tool/timer" sx={{ pl: 4 }}>
 							<ListItemIcon>
@@ -73,9 +67,17 @@ function Sidebar() {
 						</ListItemButton>
 					</List>
 					<List component="div" disablePadding>
+						<ListItemButton component={Link} to="/tool/counter" sx={{ pl: 4 }}>
+							<ListItemIcon>
+								<AddCircleOutlineIcon />
+							</ListItemIcon>
+							<ListItemText>Counter</ListItemText>
+						</ListItemButton>
+					</List>
+					<List component="div" disablePadding>
 						<ListItemButton component={Link} to="/tool/toolbox" sx={{ pl: 4 }}>
 							<ListItemIcon>
-								<TimerIcon />
+								<BuildIcon />
 							</ListItemIcon>
 							<ListItemText>Custom Toolbox</ListItemText>
 						</ListItemButton>
