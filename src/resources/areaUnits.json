@@ -1,0 +1,51 @@
+[
+    {
+      "value": "nm2",
+      "label": "square nanometers"
+    },
+    {
+      "value": "μm2",
+      "label": "square micrometers"
+    },
+    {
+      "value": "mm2",
+      "label": "square millimeters"
+    },
+    {
+      "value": "cm2",
+      "label": "square centimeters"
+    },
+    {
+      "value": "m2",
+      "label": "square meters"
+    },
+    {
+      "value": "ha",
+      "label": "hectares"
+    },
+    {
+      "value": "km2",
+      "label": "square kilometers"
+    },
+    {
+      "value": "in2",
+      "label": "square inches"
+    },
+    {
+      "value": "yd2",
+      "label": "square yards"
+    },
+    {
+      "value": "ft2",
+      "label": "square feet"
+    },
+    {
+      "value": "ac",
+      "label": "acres"
+    },
+    {
+      "value": "mi2",
+      "label": "square miles"
+    }
+  ]
+  

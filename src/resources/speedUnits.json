@@ -1,0 +1,26 @@
+[
+	{
+		"value": "m/s",
+		"label": "metres per second"
+	},
+	{
+		"value": "km/h",
+		"label": "kilometres per hour"
+	},
+	{
+		"value": "mph",
+		"label": "miles per hour"
+	},
+	{
+		"value": "knot",
+		"label": "knots"
+	},
+	{
+		"value": "ft/s",
+		"label": "feet per second"
+	},
+	{
+		"value": "ft/min",
+		"label": "feet per minute"
+	}
+]

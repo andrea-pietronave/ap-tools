@@ -1,0 +1,42 @@
+[
+	{
+		"value": "ns",
+		"label": "nanoseconds"
+	},
+	{
+		"value": "mu",
+		"label": "microseconds"
+	},
+	{
+		"value": "ms",
+		"label": "milliseconds"
+	},
+	{
+		"value": "s",
+		"label": "seconds"
+	},
+	{
+		"value": "min",
+		"label": "minutes"
+	},
+	{
+		"value": "h",
+		"label": "hours"
+	},
+	{
+		"value": "d",
+		"label": "days"
+	},
+	{
+		"value": "week",
+		"label": "weeks"
+	},
+	{
+		"value": "month",
+		"label": "months"
+	},
+	{
+		"value": "year",
+		"label": "years"
+	}
+]

@@ -1,0 +1,14 @@
+[
+	{
+		"value": "N",
+		"label": "newtons"
+	},
+	{
+		"value": "kN",
+		"label": "kilonewtons"
+	},
+	{
+		"value": "lbf",
+		"label": "pound-forces"
+	}
+]

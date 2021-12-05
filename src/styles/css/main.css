@@ -64,8 +64,34 @@
 #timer-container .inner-container .timer:hover {
   color: #209ff3; }
 
+#converter-container {
+  width: 100%;
+  text-transform: capitalize;
+  text-align: center;
+  justify-content: center; }
+#converter-container .unit-category-selector {
+  width: 50%; }
+#converter-container #unit-selector-container {
+  margin-top: 10%;
+  width: 60%; }
+#converter-container #unit-selector-container .unit-selector {
+  width: 50%; }
+#converter-container #unit-selector-container .invert-units {
+  margin: 0 1em;
+  cursor: pointer; }
+#converter-container #unit-selector-container .invert-units:hover {
+  transform: scale(1.2); }
+#converter-container #result-container {
+  margin-top: 10%;
+  width: 50%;
+  justify-content: space-between; }
+
+#menu- {
+  text-transform: capitalize; }
+
 body,
-html, #root {
+html,
+#root {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;

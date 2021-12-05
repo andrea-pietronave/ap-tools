@@ -1,0 +1,54 @@
+[
+  {
+    "value": "nm",
+    "label": "nanometers"
+  },
+  {
+    "value": "μm",
+    "label": "micrometers"
+  },
+  {
+    "value": "mm",
+    "label": "millimeters"
+  },
+  {
+    "value": "cm",
+    "label": "centimeters"
+  },
+  {
+    "value": "m",
+    "label": "meters"
+  },
+  {
+    "value": "km",
+    "label": "kilometers"
+  },
+  {
+    "value": "in",
+    "label": "inches"
+  },
+  {
+    "value": "yd",
+    "label": "yards"
+  },
+  {
+    "value": "ft-us",
+    "label": "us survey feet"
+  },
+  {
+    "value": "ft",
+    "label": "feet"
+  },
+  {
+    "value": "fathom",
+    "label": "fathoms"
+  },
+  {
+    "value": "mi",
+    "label": "miles"
+  },
+  {
+    "value": "nMi",
+    "label": "nautical miles"
+  }
+]

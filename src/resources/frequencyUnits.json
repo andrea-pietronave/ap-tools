@@ -1,0 +1,34 @@
+[
+	{
+		"value": "mHz",
+		"label": "millihertz"
+	},
+	{
+		"value": "Hz",
+		"label": "hertz"
+	},
+	{
+		"value": "kHz",
+		"label": "kilohertz"
+	},
+	{
+		"value": "MHz",
+		"label": "megahertz"
+	},
+	{
+		"value": "GHz",
+		"label": "gigahertz"
+	},
+	{
+		"value": "THz",
+		"label": "terahertz"
+	},
+	{
+		"value": "deg/s",
+		"label": "degrees per second"
+	},
+	{
+		"value": "rad/s",
+		"label": "radians per second"
+	}
+]

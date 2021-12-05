@@ -11,6 +11,7 @@ import Stopwatch from "./components/Stopwatch";
 import Sidebar from "./components/Sidebar";
 import ToolBox from "./components/ToolBox";
 import Timer from "./components/Timer";
+import Converter from "./components/Converter";
 
 function App() {
 	return (
@@ -27,6 +28,9 @@ function App() {
 					</Route>
 					<Route path="/tool/timer">
 						<Timer />
+					</Route>
+					<Route path="/tool/converter">
+						<Converter />
 					</Route>
 					<Route path="/tool/toolbox">
 						<ToolBox />

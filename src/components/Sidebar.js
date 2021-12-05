@@ -16,6 +16,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import BuildIcon from "@mui/icons-material/Build";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
 import { Box } from "@mui/system";
 
 function Sidebar() {
@@ -72,6 +73,18 @@ function Sidebar() {
 								<AddCircleOutlineIcon />
 							</ListItemIcon>
 							<ListItemText>Counter</ListItemText>
+						</ListItemButton>
+					</List>
+					<List component="div" disablePadding>
+						<ListItemButton
+							component={Link}
+							to="/tool/converter"
+							sx={{ pl: 4 }}
+						>
+							<ListItemIcon>
+								<CompareArrowsIcon />
+							</ListItemIcon>
+							<ListItemText>Converter</ListItemText>
 						</ListItemButton>
 					</List>
 					<List component="div" disablePadding>

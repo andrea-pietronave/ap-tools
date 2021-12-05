@@ -1,0 +1,42 @@
+#converter-container {
+  & {
+    width: 100%;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+  }
+  .unit-category-selector {
+    width: 50%;
+  }
+
+  #unit-selector-container {
+    & {
+      margin-top: 10%;
+      width: 60%;
+    }
+
+    .unit-selector {
+      width: 50%;
+    }
+
+    .invert-units {
+      margin: 0 1em;
+      cursor: pointer;
+    }
+    .invert-units:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  #result-container {
+    & {
+      margin-top: 10%;
+      width: 50%;
+      justify-content: space-between;
+    }
+  }
+}
+
+#menu- {
+  text-transform: capitalize;
+}

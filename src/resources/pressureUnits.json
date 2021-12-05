@@ -1,0 +1,38 @@
+[
+	{
+		"value": "Pa",
+		"label": "pascals"
+	},
+	{
+		"value": "kPa",
+		"label": "kilopascals"
+	},
+	{
+		"value": "MPa",
+		"label": "megapascals"
+	},
+	{
+		"value": "hPa",
+		"label": "hectopascals"
+	},
+	{
+		"value": "bar",
+		"label": "bar"
+	},
+	{
+		"value": "torr",
+		"label": "torr"
+	},
+	{
+		"value": "psi",
+		"label": "pounds per square inch"
+	},
+	{
+		"value": "ksi",
+		"label": "kilopound per square inch"
+	},
+	{
+		"value": "inHg",
+		"label": "inches of mercury"
+	}
+]

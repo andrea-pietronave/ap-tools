@@ -1,0 +1,26 @@
+[
+	{
+		"value": "c",
+		"label": "coulombs"
+	},
+	{
+		"value": "mC",
+		"label": "millicoulombs"
+	},
+	{
+		"value": "g",
+		"label": "grams"
+	},
+	{
+		"value": "μC",
+		"label": "microcoulombs"
+	},
+	{
+		"value": "nC",
+		"label": "nanocoulombs"
+	},
+	{
+		"value": "pC",
+		"label": "picocoulombs"
+	}
+]

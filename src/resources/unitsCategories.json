@@ -1,0 +1,102 @@
+[
+	{
+		"value": "acceleration",
+		"label": "acceleration"
+	},
+	{
+		"value": "angle",
+		"label": "angle"
+	},
+	{
+		"value": "apparentPower",
+		"label": "apparent power"
+	},
+	{
+		"value": "area",
+		"label": "area"
+	},
+	{
+		"value": "charge",
+		"label": "charge"
+	},
+	{
+		"value": "current",
+		"label": "current"
+	},
+	{
+		"value": "digital",
+		"label": "digital"
+	},
+	{
+		"value": "each",
+		"label": "each"
+	},
+	{
+		"value": "energy",
+		"label": "energy"
+	},
+	{
+		"value": "force",
+		"label": "force"
+	},
+	{
+		"value": "frequency",
+		"label": "frequency"
+	},
+	{
+		"value": "illuminance",
+		"label": "illuminance"
+	},
+	{
+		"value": "length",
+		"label": "length"
+	},
+	{
+		"value": "mass",
+		"label": "mass"
+	},
+	{
+		"value": "pace",
+		"label": "pace"
+	},
+	{
+		"value": "power",
+		"label": "power"
+	},
+	{
+		"value": "pressure",
+		"label": "pressure"
+	},
+	{
+		"value": "reactiveEnergy",
+		"label": "reactive energy"
+	},
+	{
+		"value": "reactivePower",
+		"label": "reactive power"
+	},
+	{
+		"value": "speed",
+		"label": "speed"
+	},
+	{
+		"value": "temperature",
+		"label": "temperature"
+	},
+	{
+		"value": "time",
+		"label": "time"
+	},
+	{
+		"value": "voltage",
+		"label": "voltage"
+	},
+	{
+		"value": "volumeFlowRate",
+		"label": "volume flow rate"
+	},
+	{
+		"value": "volume",
+		"label": "volume"
+	}
+]

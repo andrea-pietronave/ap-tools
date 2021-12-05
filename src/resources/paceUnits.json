@@ -1,0 +1,18 @@
+[
+	{
+		"value": "min/km",
+		"label": "minutes per kilometre"
+	},
+	{
+		"value": "s/m",
+		"label": "seconds per metre"
+	},
+	{
+		"value": "min/mi",
+		"label": "minutes per mile"
+	},
+	{
+		"value": "s/ft",
+		"label": "seconds per foot"
+	}
+]

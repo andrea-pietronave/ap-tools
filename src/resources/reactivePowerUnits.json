@@ -1,0 +1,22 @@
+[
+	{
+		"value": "VAR",
+		"label": "volt-amperes reactive"
+	},
+	{
+		"value": "mVAR",
+		"label": "millivolt-amperes reactive"
+	},
+	{
+		"value": "kVAR",
+		"label": "kilovolt-amperes reactive"
+	},
+	{
+		"value": "MVAR",
+		"label": "megavolt-amperes reactive"
+	},
+	{
+		"value": "GVAR",
+		"label": "gigavolt-amperes reactive"
+	}
+]

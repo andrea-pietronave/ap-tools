@@ -1,0 +1,34 @@
+[
+	{
+		"value": "mcg",
+		"label": "micrograms"
+	},
+	{
+		"value": "mg",
+		"label": "milligrams"
+	},
+	{
+		"value": "g",
+		"label": "grams"
+	},
+	{
+		"value": "kg",
+		"label": "kilograms"
+	},
+	{
+		"value": "mt",
+		"label": "metric tonnes"
+	},
+	{
+		"value": "oz",
+		"label": "ounces"
+	},
+	{
+		"value": "lb",
+		"label": "pounds"
+	},
+	{
+		"value": "t",
+		"label": "tons"
+	}
+]

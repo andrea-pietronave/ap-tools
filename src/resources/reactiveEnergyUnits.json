@@ -1,0 +1,22 @@
+[
+	{
+		"value": "mVARh",
+		"label": "millivolt-amperes reactive hour"
+	},
+	{
+		"value": "kVARh",
+		"label": "kilovolt-amperes reactive hour"
+	},
+	{
+		"value": "min/mi",
+		"label": "minutes per mile"
+	},
+	{
+		"value": "MVARh",
+		"label": "megavolt-amperes reactive hour"
+	},
+	{
+		"value": "GVARh",
+		"label": "gigavolt-amperes reactive hour"
+	}
+]

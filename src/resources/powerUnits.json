@@ -1,0 +1,38 @@
+[
+	{
+		"value": "W",
+		"label": "watts"
+	},
+	{
+		"value": "mW",
+		"label": "milliwatts"
+	},
+	{
+		"value": "kW",
+		"label": "kilowatts"
+	},
+	{
+		"value": "MW",
+		"label": "megawatts"
+	},
+	{
+		"value": "GW",
+		"label": "gigawatts"
+	},
+	{
+		"value": "PS",
+		"label": "horsepower (metric)"
+	},
+	{
+		"value": "Btu/s",
+		"label": "british thermal units per second"
+	},
+	{
+		"value": "ft-lb/s",
+		"label": "foot-pounds per second"
+	},
+	{
+		"value": "hp",
+		"label": "horsepower (british)"
+	}
+]

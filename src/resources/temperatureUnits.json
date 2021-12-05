@@ -1,0 +1,18 @@
+[
+	{
+		"value": "C",
+		"label": "degrees celsius"
+	},
+	{
+		"value": "K",
+		"label": "degrees kelvin"
+	},
+	{
+		"value": "F",
+		"label": "degrees fahrenheit"
+	},
+	{
+		"value": "R",
+		"label": "degrees rankine"
+	}
+]

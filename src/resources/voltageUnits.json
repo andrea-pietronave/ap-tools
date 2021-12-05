@@ -1,0 +1,14 @@
+[
+	{
+		"value": "V",
+		"label": "volts"
+    },
+	{
+		"value": "mV",
+		"label": "millivolts"
+	},
+	{
+		"value": "kV",
+		"label": "kilovolts"
+	}
+]

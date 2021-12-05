@@ -1,0 +1,23 @@
+[
+    {
+      "value": "VA",
+      "label": "volt-amperes"
+    },
+    {
+      "value": "mVA",
+      "label": "millivolt-amperes"
+    },
+    {
+      "value": "kVA",
+      "label": "kilovolt-amperes"
+    },
+    {
+      "value": "MVA",
+      "label": "megavolt-amperes"
+    },
+    {
+      "value": "GVA",
+      "label": "gigavolt-amperes"
+    }
+  ]
+  

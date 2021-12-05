@@ -1,0 +1,106 @@
+[
+	{
+		"value": "mm3",
+		"label": "cubic millimeters"
+	},
+	{
+		"value": "cm3",
+		"label": "cubic centimeters"
+	},
+	{
+		"value": "ml",
+		"label": "millilitres"
+	},
+	{
+		"value": "ml",
+		"label": "millilitres"
+	},
+	{
+		"value": "cl",
+		"label": "centilitres"
+	},
+	{
+		"value": "dl",
+		"label": "decilitres"
+	},
+	{
+		"value": "l",
+		"label": "litres"
+	},
+	{
+		"value": "kl",
+		"label": "kilolitres"
+	},
+	{
+		"value": "m3",
+		"label": "cubic meters"
+	},
+	{
+		"value": "km3",
+		"label": "cubic kilometers"
+	},
+	{
+		"value": "krm",
+		"label": "kryddmått"
+	},
+	{
+		"value": "tsk",
+		"label": "teskedar"
+	},
+	{
+		"value": "msk",
+		"label": "matskedar"
+	},
+	{
+		"value": "kkp",
+		"label": "kaffekoppar"
+	},
+	{
+		"value": "glas",
+		"label": "glas"
+	},
+	{
+		"value": "kanna",
+		"label": "kannor"
+	},
+	{
+		"value": "tsp",
+		"label": "teaspoons"
+	},
+	{
+		"value": "Tbs",
+		"label": "tablespoons"
+	},
+	{
+		"value": "in3",
+		"label": "cubic inches"
+	},
+	{
+		"value": "fl-oz",
+		"label": "fluid ounces"
+	},
+	{
+		"value": "cup",
+		"label": "cups"
+	},
+	{
+		"value": "pnt",
+		"label": "pints"
+	},
+	{
+		"value": "qt",
+		"label": "quarts"
+	},
+	{
+		"value": "gal",
+		"label": "gallons"
+	},
+	{
+		"value": "ft3",
+		"label": "cubic feet"
+	},
+	{
+		"value": "yd3",
+		"label": "cubic yards"
+	}
+]

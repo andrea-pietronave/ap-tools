@@ -1,0 +1,23 @@
+[
+    {
+      "value": "rad",
+      "label": "radians"
+    },
+    {
+      "value": "deg",
+      "label": "degrees"
+    },
+    {
+      "value": "grad",
+      "label": "gradians"
+    },
+    {
+      "value": "arcmin",
+      "label": "arcminutes"
+    },
+    {
+      "value": "arcsec",
+      "label": "arcseconds"
+    }
+  ]
+  

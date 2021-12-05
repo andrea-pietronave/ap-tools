@@ -1,0 +1,42 @@
+[
+	{
+		"value": "b",
+		"label": "bits"
+	},
+	{
+		"value": "Kb",
+		"label": "kilobits"
+	},
+	{
+		"value": "Mb",
+		"label": "megabits"
+	},
+	{
+		"value": "Gb",
+		"label": "gigabits"
+	},
+	{
+		"value": "Tb",
+		"label": "Terabits"
+	},
+	{
+		"value": "B",
+		"label": "Bytes"
+	},
+	{
+		"value": "KB",
+		"label": "Kilobytes"
+	},
+	{
+		"value": "MB",
+		"label": "Megabytes"
+	},
+	{
+		"value": "GB",
+		"label": "Gigabytes"
+	},
+	{
+		"value": "TB",
+		"label": "Terabytes"
+	}
+]

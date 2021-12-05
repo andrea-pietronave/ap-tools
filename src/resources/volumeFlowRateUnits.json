@@ -1,0 +1,150 @@
+[
+	{
+		"value": "mm3/s",
+		"label": "cubic millimeters per second"
+    },
+	{
+		"value": "cm3/s",
+		"label": "cubic centimeters per second"
+	},
+	{
+		"value": "ml/s",
+		"label": "millilitres per second"
+	},
+	{
+		"value": "cl/s",
+		"label": "centilitres per second"
+	},
+	{
+		"value": "dl/s",
+		"label": "decilitres per second"
+	},
+	{
+		"value": "l/s",
+		"label": "litres per second"
+	},
+	{
+		"value": "l/min",
+		"label": "litres per minute"
+	},
+	{
+		"value": "l/h",
+		"label": "litres per hour"
+	},
+	{
+		"value": "kl/s",
+		"label": "kilolitres per second"
+	},
+	{
+		"value": "kl/min",
+		"label": "kilolitres per minute"
+	},
+	{
+		"value": "kl/h",
+		"label": "kilolitres per hour"
+	},
+	{
+		"value": "m3/s",
+		"label": "cubic meters per second"
+	},
+	{
+		"value": "m3/min",
+		"label": "Cubic meters per minute"
+	},
+	{
+		"value": "m3/h",
+		"label": "Cubic meters per hour"
+	},
+	{
+		"value": "km3/s",
+		"label": "Cubic kilometers per second"
+	},
+	{
+		"value": "tsp/s",
+		"label": "teaspoons per second"
+	},
+	{
+		"value": "Tbs/s",
+		"label": "tablespoons per second"
+	},
+	{
+		"value": "in3/s",
+		"label": "cubic inches per second"
+	},
+	{
+		"value": "in3/min",
+		"label": "cubic inches per minute"
+	},
+	{
+		"value": "in3/h",
+		"label": "cubic inches per hour"
+	},
+	{
+		"value": "fl-oz/s",
+		"label": "fluid ounces per second"
+	},
+	{
+		"value": "fl-oz/min",
+		"label": "fluid ounces per minute"
+	},
+	{
+		"value": "fl-oz/h",
+		"label": "fluid ounces per hour"
+	},
+	{
+		"value": "cup/s",
+		"label": "cups per second"
+	},
+	{
+		"value": "pnt/s",
+		"label": "pints per second"
+	},
+	{
+		"value": "pnt/min",
+		"label": "pints per minute"
+	},
+	{
+		"value": "pnt/h",
+		"label": "pints per hour"
+	},
+	{
+		"value": "qt/s",
+		"label": "quarts per second"
+	},
+	{
+		"value": "gal/s",
+		"label": "gallons per second"
+	},
+	{
+		"value": "gal/min",
+		"label": "gallons per minute"
+	},
+	{
+		"value": "gal/h",
+		"label": "gallons per hour"
+	},
+	{
+		"value": "ft3/s",
+		"label": "cubic feet per second"
+	},
+	{
+		"value": "ft3/m",
+		"label": "cubic feet per minute"
+	},
+	{
+		"value": "ft3/h",
+		"label": "cubic feet per hour"
+	},
+	{
+		"value": "yd3/s",
+		"label": "cubic yards per second"
+	},
+	{
+		"value": "yd3/m",
+		"label": "cubic yards per minute"
+	},
+	{
+		"value": "yd3/h",
+		"label": "cubic yards per hour"
+	}
+]

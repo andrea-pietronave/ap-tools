@@ -1,0 +1,30 @@
+[
+	{
+		"value": "Wh",
+		"label": "watt-hours"
+	},
+	{
+		"value": "mWh",
+		"label": "milliwatt-hours"
+	},
+	{
+		"value": "kWh",
+		"label": "kilowatt-hours"
+	},
+	{
+		"value": "MWh",
+		"label": "megawatt-hours"
+	},
+	{
+		"value": "GWh",
+		"label": "gigawatt-hours"
+	},
+	{
+		"value": "J",
+		"label": "joules"
+	},
+	{
+		"value": "kJ",
+		"label": "kilojoules"
+	}
+]

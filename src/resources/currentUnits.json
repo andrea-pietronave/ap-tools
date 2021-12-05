@@ -1,0 +1,14 @@
+[
+	{
+		"value": "A",
+		"label": "amperes"
+	},
+	{
+		"value": "mA",
+		"label": "milliamperes"
+	},
+	{
+		"value": "kA",
+		"label": "kiloamperes"
+	}
+]
