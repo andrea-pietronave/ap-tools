@@ -1,0 +1,32 @@
+#toolbox-container {
+  & {
+    width: 100%;
+  }
+  .inner-container {
+    width: 100%;
+  }
+  .border {
+    border-top: 10px solid $nord0;
+    border-bottom: 10px solid $nord0;
+    border-right: 10px solid $nord0;
+  }
+  .tools-container {
+    .inner-button {
+      min-width: 20px;
+    }
+  }
+
+  #tool-selector {
+    & {
+      text-transform: capitalize;
+      margin: 20px;
+    }
+
+    .tool-selector-buttons {
+      button {
+        margin-right: 20px;
+        width: 10%;
+      }
+    }
+  }
+}

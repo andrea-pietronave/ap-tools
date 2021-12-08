@@ -1,27 +1,23 @@
-#timer-container{
-    &{
-        width: 90%;
-        margin: auto;
-       
+#timer-container {
+  & {
+    width: 90%;
+    margin: auto;
+  }
+
+  .inner-container {
+    .timer-buttons {
+      button {
+        margin: 10px;
+        font-size: 1.5em;
+      }
     }
 
-    .inner-container{
-        .timer-buttons{
-            button{
-                margin: 10px;
-                font-size: 1.5em;
-            }
-        }
-
-        .timer{
-            font-size: 4em;
-            cursor: pointer;
-        }
-        .timer:hover{
-            color: rgb(32, 159, 243)
-        }
-       
-
-
+    .timer {
+      font-size: 4em;
+      cursor: pointer;
     }
+    .timer:hover {
+      color: rgb(32, 159, 243);
+    }
+  }
 }

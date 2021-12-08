@@ -3,10 +3,12 @@
     width: 100%;
     text-transform: capitalize;
     text-align: center;
-    justify-content: center;
   }
   .unit-category-selector {
     width: 50%;
+  }
+  input {
+    text-align: center;
   }
 
   #unit-selector-container {

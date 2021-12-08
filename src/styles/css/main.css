@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 .sidebar {
   min-width: 220px;
   width: 220px;
   min-height: 100%;
   color: white;
-  background-color: #052846; }
+  background-color: #2E3440; }
 
 .sidebar svg {
   color: white; }
@@ -27,7 +28,6 @@
   font-size: 5em; }
 
 #stopwatch-container {
-  width: 90%;
   margin: 0 auto; }
 #stopwatch-container .hdt-time {
   font-size: 0.6em; }
@@ -37,7 +37,8 @@
   margin: 10px;
   font-size: 1.5em; }
 #stopwatch-container .inner-container .timer {
-  font-size: 4em; }
+  font-size: 4em;
+  margin-top: 20%; }
 #stopwatch-container .inner-container input {
   font-size: 2em; }
 #stopwatch-container .splices-container {
@@ -67,10 +68,11 @@
 #converter-container {
   width: 100%;
   text-transform: capitalize;
-  text-align: center;
-  justify-content: center; }
+  text-align: center; }
 #converter-container .unit-category-selector {
   width: 50%; }
+#converter-container input {
+  text-align: center; }
 #converter-container #unit-selector-container {
   margin-top: 10%;
   width: 60%; }
@@ -89,15 +91,87 @@
 #menu- {
   text-transform: capitalize; }
 
+#toolbox-container {
+  width: 100%; }
+#toolbox-container .inner-container {
+  width: 100%; }
+#toolbox-container .border {
+  border-top: 10px solid #2E3440;
+  border-bottom: 10px solid #2E3440;
+  border-right: 10px solid #2E3440; }
+#toolbox-container .tools-container .inner-button {
+  min-width: 20px; }
+#toolbox-container #tool-selector {
+  text-transform: capitalize;
+  margin: 20px; }
+#toolbox-container #tool-selector .tool-selector-buttons button {
+  margin-right: 20px;
+  width: 10%; }
+
 body,
 html,
 #root {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #D8DEE9; }
 
 * {
   box-sizing: border-box; }
+
+#home-container {
+  width: 100%; }
+#home-container .header {
+  background-image: url("../../resources/image/home-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  resize: both;
+  height: 100%; }
+#home-container .header h1,
+#home-container .header h2,
+#home-container .header h3 {
+  font-variant: small-caps;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  align-self: center; }
+#home-container .header h1 {
+  font-size: 5em; }
+#home-container .header h2 {
+  font-size: 2em; }
+#home-container .header .tool-card {
+  background-color: #E5E9F0;
+  position: relative;
+  font-size: 1.4em;
+  max-height: 250px;
+  margin: 20px 20%; }
+#home-container .header .tool-card:after {
+  content: "";
+  border-bottom: 10px solid #5E81AC;
+  border-right: 10px solid #5E81AC;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  width: 50px; }
+#home-container .header .tool-card a {
+  font-weight: bolder;
+  color: #88C0D0; }
+#home-container .header .tool-card h4 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5em;
+  margin: 0; }
+#home-container .header .tool-card .simple-span {
+  font-weight: bolder;
+  letter-spacing: 1px;
+  font-family: "Bebas Neue", cursive;
+  font-variant: small-caps;
+  font-size: 1.2em;
+  color: #5E81AC;
+  text-transform: lowercase;
+  text-shadow: 0px 3px 0px #ffffff, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=main.css.map */

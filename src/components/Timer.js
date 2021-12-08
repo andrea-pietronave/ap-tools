@@ -126,9 +126,9 @@ function Timer() {
 					alignItems="center"
 					flexDirection="column"
 				>
-					<p className="timer" onClick={handleOpen}>
+					<div className="timer" onClick={handleOpen}>
 						{formatTime(timer)}
-					</p>
+					</div>
 					<LinearProgress
 						variant="determinate"
 						value={normalise(timer)}

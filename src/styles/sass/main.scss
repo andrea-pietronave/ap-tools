@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import "../../../node_modules/nord/src/sass/nord.scss";
 @import "sidebar";
 @import "counter";
 @import "stopwatch";
 @import "timer";
 @import "converter";
+@import "toolbox";
 
 body,
 html,
@@ -13,8 +15,86 @@ html,
   padding: 0;
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
+  background-color: $nord4;
 }
 
 * {
   box-sizing: border-box;
+}
+
+#home-container {
+  & {
+    width: 100%;
+  }
+
+  .header {
+    & {
+      background-image: url("../../resources/image/home-background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      resize: both;
+      height: 100%;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-variant: small-caps;
+      font-family: "Roboto Slab", serif;
+      text-align: center;
+      text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+      color: #ffffff;
+      align-self: center;
+    }
+    h1 {
+      font-size: 5em;
+    }
+
+    h2 {
+      font-size: 2em;
+    }
+
+    .tool-card {
+      & {
+        background-color: $nord5;
+        position: relative;
+        font-size: 1.4em;
+        max-height: 250px;
+        margin: 20px 20%;
+      }
+
+      &:after {
+        content: "";
+        border-bottom: 10px solid $nord10;
+        border-right: 10px solid $nord10;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 50px;
+        width: 50px;
+      }
+      a {
+        font-weight: bolder;
+        color: $nord8;
+      }
+
+      h4 {
+        font-family: "Roboto Slab", serif;
+        font-size: 1.5em;
+        margin: 0;
+      }
+      .simple-span {
+        font-weight: bolder;
+        letter-spacing: 1px;
+        font-family: "Bebas Neue", cursive;
+        font-variant: small-caps;
+        font-size: 1.2em;
+        color: $nord10;
+        text-transform: lowercase;
+        text-shadow: 0px 3px 0px #ffffff, 0px 14px 10px rgba(0, 0, 0, 0.15),
+          0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
 }

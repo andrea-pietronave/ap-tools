@@ -1,12 +1,11 @@
 .sidebar {
-    min-width: 220px;
-    width: 220px;
-    min-height: 100%;
-    color: white;
-    background-color: #052846;
-  }
-  
-  .sidebar svg {
-    color: white;
-  }
-  
+  min-width: 220px;
+  width: 220px;
+  min-height: 100%;
+  color: white;
+  background-color: $nord0;
+}
+
+.sidebar svg {
+  color: white;
+}

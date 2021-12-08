@@ -133,7 +133,7 @@ function Stopwatch() {
 							}}
 						/>
 					</Box>
-					<p className="timer">{formatTime(timer)}</p>
+					<div className="timer">{formatTime(timer)}</div>
 
 					<Box container item justifyContent="center" className="timer-buttons">
 						<Button

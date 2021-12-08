@@ -1,58 +1,51 @@
-#stopwatch-container{
-    &{
-        width: 90%;
-        margin: 0 auto;
-       
+#stopwatch-container {
+  & {
+    margin: 0 auto;
+  }
+
+  .hdt-time {
+    font-size: 0.6em;
+  }
+
+  .inner-container {
+    & {
+      margin-top: 5%;
     }
 
-    .hdt-time{
-        font-size: 0.6em;
-    }
-  
-
-    .inner-container{
-        &{
-            margin-top: 5%;
-            
-        }
-
-        .timer-buttons{
-            button{
-                margin: 10px;
-                font-size: 1.5em;
-            }
-        }
-
-        .timer{
-            font-size: 4em;
-        }
-
-        input {
-            font-size: 2em;
-          }
+    .timer-buttons {
+      button {
+        margin: 10px;
+        font-size: 1.5em;
+      }
     }
 
-    .splices-container{
-        &{
-            width: 100%;
-            font-size: 2em;
-            
-        }
-       
-        #splices{
-            &{
-
-                width: 100%;
-                max-height: 40vh;
-                overflow: auto;
-                display: flex;
-                justify-content: center;
-            }
-            ul{
-                list-style: none;
-            }
-        }
-
-       
+    .timer {
+      font-size: 4em;
+      margin-top: 20%;
     }
+
+    input {
+      font-size: 2em;
+    }
+  }
+
+  .splices-container {
+    & {
+      width: 100%;
+      font-size: 2em;
+    }
+
+    #splices {
+      & {
+        width: 100%;
+        max-height: 40vh;
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+      }
+      ul {
+        list-style: none;
+      }
+    }
+  }
 }
