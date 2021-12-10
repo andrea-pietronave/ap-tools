@@ -123,11 +123,6 @@ html,
 #home-container {
   width: 100%; }
 #home-container .header {
-  background-image: url("../../resources/image/home-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  resize: both;
   height: 100%; }
 #home-container .header h1,
 #home-container .header h2,
@@ -135,13 +130,17 @@ html,
   font-variant: small-caps;
   font-family: "Roboto Slab", serif;
   text-align: center;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 0px 90px #5e81ac;
   color: #ffffff;
   align-self: center; }
 #home-container .header h1 {
   font-size: 5em; }
 #home-container .header h2 {
   font-size: 2em; }
+#home-container .header .title-div {
+  background-color: #2E3440; }
+#home-container .header .border {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
 #home-container .header .tool-card {
   background-color: #E5E9F0;
   position: relative;
@@ -173,5 +172,34 @@ html,
   color: #5E81AC;
   text-transform: lowercase;
   text-shadow: 0px 3px 0px #ffffff, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1); }
+
+#about-container {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em; }
+#about-container h1 {
+  font-size: 2.5em;
+  font-family: "Roboto Slab", serif;
+  font-variant: small-caps; }
+#about-container h2 {
+  font-size: 1.4em;
+  font-variant: small-caps; }
+#about-container .stack-list {
+  display: flex;
+  justify-content: center; }
+#about-container .stack-list li {
+  text-align: center;
+  max-width: 200px; }
+#about-container .stack-list li * {
+  font-size: 1em !important; }
+#about-container .contacts-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+#about-container .contacts-list li {
+  text-align: center; }
+#about-container .contacts-list li * {
+  font-size: 1em !important; }
 
 /*# sourceMappingURL=main.css.map */

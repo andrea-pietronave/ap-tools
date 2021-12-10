@@ -29,11 +29,6 @@ html,
 
   .header {
     & {
-      background-image: url("../../resources/image/home-background.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      resize: both;
       height: 100%;
     }
 
@@ -43,16 +38,25 @@ html,
       font-variant: small-caps;
       font-family: "Roboto Slab", serif;
       text-align: center;
-      text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+      text-shadow: 0px 0px 90px rgb(94, 129, 172);
       color: #ffffff;
       align-self: center;
     }
+
     h1 {
       font-size: 5em;
     }
 
     h2 {
       font-size: 2em;
+    }
+
+    .title-div {
+      background-color: $nord0;
+    }
+
+    .border {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
     .tool-card {
@@ -94,6 +98,59 @@ html,
         text-transform: lowercase;
         text-shadow: 0px 3px 0px #ffffff, 0px 14px 10px rgba(0, 0, 0, 0.15),
           0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+#about-container {
+  & {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    font-family: "Roboto Slab", serif;
+    font-variant: small-caps;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    font-variant: small-caps;
+  }
+
+  .stack-list {
+    & {
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      & {
+        text-align: center;
+        max-width: 200px;
+      }
+      * {
+        font-size: 1em !important;
+      }
+    }
+  }
+  .contacts-list {
+    & {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      & {
+        text-align: center;
+      }
+      * {
+        font-size: 1em !important;
       }
     }
   }

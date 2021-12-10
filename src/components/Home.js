@@ -16,16 +16,18 @@ function Home() {
 				justifyContent="start"
 				flexDirection="column"
 			>
-				<h1>AP Tools</h1>
-				<h2>A simple website for simple tools.</h2>
-				<h3>Current Tools</h3>
+				<div className="title-div">
+					<h1>AP Tools</h1>
+					<h2>A simple website for simple tools.</h2>
+					<h3>Current Tools</h3>
+				</div>
 				<Box
 					display="flex"
 					alignContent="center"
 					justifyContent="start"
 					flexDirection="column"
 				>
-					<Card className="tool-card">
+					<Card className="tool-card border">
 						<CardContent>
 							<h4>Stopwatch</h4>
 							<p>
@@ -37,7 +39,7 @@ function Home() {
 							<Button href="/tool/stopwatch">To the tool.</Button>
 						</CardActions>
 					</Card>
-					<Card className="tool-card">
+					<Card className="tool-card border">
 						<CardContent>
 							<h4>Timer</h4>
 							<p>
@@ -49,7 +51,7 @@ function Home() {
 							<Button href="/tool/timer">To the tool.</Button>
 						</CardActions>
 					</Card>
-					<Card className="tool-card">
+					<Card className="tool-card border">
 						<CardContent>
 							<h4>Counter</h4>
 							<p>
@@ -61,7 +63,7 @@ function Home() {
 							<Button href="/tool/counter">To the tool.</Button>
 						</CardActions>
 					</Card>
-					<Card className="tool-card">
+					<Card className="tool-card border">
 						<CardContent>
 							<h4>Converter</h4>
 							<p>
@@ -73,7 +75,7 @@ function Home() {
 							<Button href="/tool/converter">To the tool.</Button>
 						</CardActions>
 					</Card>
-					<Card className="tool-card">
+					<Card className="tool-card border">
 						<CardContent>
 							<h4>Timezone</h4>
 							<p>Coming soon...</p>
